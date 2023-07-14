@@ -1,0 +1,16 @@
+ As estruturas de repetição, como o nome já diz, são usadas, quando o codigo
+necessita que comando sejam repassados no minimo uma vez, sem que precise
+reescrever linhas de codigo.
+No javascript, assim como na maioria das linguagens, os laços de repetição são
+definidos por "while/do while e for".
+ O primeiro, "while", é usado quando um bloco de comandos tem que ser repetidos
+N vezes; assim sua sintaxe é a seguinte: enquanto (while) "condição" for
+verdadeira, repita. há também o "do while", que diferente do laço acima, esse
+pode ser falso, que o codigo mesmo assim será executado pelo menos uma vez, ou
+seja, a condição só será verificada no fim do laço de repetição: faça (do)
+"isso", enquanto "condição verdadeira".
+ Agora, para o laço "for", segue o principio que este é usado quando há números
+finitos de repetição, quando necessita que o comando repita poucas vezes; o
+"for" é seguido de três declarações, primeiro a variavel controladora do laço,
+depois condição a ser verificada e por ultimo, uma expressão que será xecutada
+a cada fim de bloco e inicio de repetição. 
