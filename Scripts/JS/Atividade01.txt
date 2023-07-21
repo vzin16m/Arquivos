@@ -1,0 +1,21 @@
+a)Pesquise como declarar de variáveis no javaScript – Depois explique em até três parágrafos a diferença entre as palavras chaves: const, var e let  (entrega)
+R:As variaveis em javascript são declaradas por uma sintaxe basica
+  simplesmente aponte var (ou let) "nomedavariavel" = "valor"";" exemplo:
+  var numeros="1";
+
+  a diferença entre var, let e const, é a seguinte, var é uma variavel de tipo global
+  let se aplica a um bloco, e const é uma variavel imutavel ao longo do codigo, ou seja
+  uma constante
+
+b)Pesquise sobre a sintaxe das estruturas de decisão em javaScript: if/else/else if – switch/case – operador ternário e fazer um resumo de até três parágrafos(entrega)
+R:If,else,else if, switch case e operador ternário, correspondem todos, a condições que podem ser empregadas no javascript
+  de acordo com cada situação ou cada logica aplicada; assim sendo não existe maneira correta, apenas maneiras divergentes
+   Os três primeiros, "if/else/else if" forman
+
+c)Implemente em javaScript os algorítimos das páginas   5 e 6(entrega) 
+
+
+d)Pesquise sobre a sintaxe das estruos algoritmos dasturas de repetição em javaScript: while/do while/for e fazer um resumo de até três parágrafos(entrega)
+
+
+e)Implemente em javaScript os algoritmos das páginas 9 e 10(entrega)
