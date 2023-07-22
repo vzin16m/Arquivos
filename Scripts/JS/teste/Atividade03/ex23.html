@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <button onclick="abrirPopUp()">Abrir Pop-up</button>
+    <button onclick="fecharJanela()">Fechar Pop-up</button>
+    <button onclick="imprimirPagina()">Imprimir Página</button>
+
+    <script>
+        var janela
+        function abrirPopUp() {
+            janela = window.open(
+                'http://sp.senac.br/catanduva',
+                'Senac Catanduva',
+                'widght=400',
+                'height=200'
+            )
+        }
+
+        function fecharJanela() {
+            janela.close();
+        }
+
+        function imprimirPagina() {
+            window.print();
+        }
+    </script>
+    
+</body>
+</html>

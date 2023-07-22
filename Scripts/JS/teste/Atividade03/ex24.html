@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+    <body>
+        <h1>Informações da Tela</h1>
+        <p>Largura máxima da tela: <span id="larguraMax"></span> pixels</p>
+        <p>Altura máxima da tela: <span id="alturaMax"></span> pixels</p>
+        <p>Largura atual da tela: <span id="larguraAtual"></span> pixels</p>
+        <p>Altura atual da tela: <span id="alturaAtual"></span> pixels</p>
+    
+        <script>
+            var larguraMax = window.screen.availWidth;
+            var alturaMax = window.screen.availHeight;
+            var larguraAtual = window.screen.width;
+            var alturaAtual = window.screen.height;
+    
+            document.getElementById("larguraMax").innerText = larguraMax;
+            document.getElementById("alturaMax").innerText = alturaMax;
+            document.getElementById("larguraAtual").innerText = larguraAtual;
+            document.getElementById("alturaAtual").innerText = alturaAtual;
+        </script>
+    </body>
+    
+    </html>
