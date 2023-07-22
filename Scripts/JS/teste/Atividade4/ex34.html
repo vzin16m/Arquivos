@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Exemplo de Objeto JavaScript</title>
+</head>
+
+<body>
+    <h1>Exemplo de Objeto JavaScript</h1>
+
+    <script>
+        var calcado = new Object();
+        calcado.descricao = 'Tênis Masculino';
+        calcado.marca = 'Pizante';
+        calcado.tamanho = '41';
+        calcado.cor = 'Branco';
+        calcado.preco = 300;
+
+        console.log(calcado);
+
+        delete calcado.cor;
+        delete calcado.preco;
+
+        console.log(calcado);
+    </script>
+</body>
+
+</html>

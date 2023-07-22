@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Document</title>
+</head>
+
+<body>
+    <form name="forma">
+        <label for="cep">CEP:</label>
+        <input type="text" name="cep" id="cep" required>
+        <button type="submit" bnt-submit>Pesquisar</button>
+
+        <label for="endereco">Endereço:</label>
+        <input type="text" name="endereco" id="endereco" readonly>
+
+        <label for="bairro">Bairro:</label>
+        <input type="text" name="bairro" id="bairro" readonly>
+
+        <label for="cidade">Cidade:</label>
+        <input type="text" name="cidade" id="cidade" readonly>
+
+        <label for="uf">UF:</label>
+        <input type="text" name="uf" id="uf" readonly>
+    </form>
+
+    <script>
+        var btnPesquisar = document.querySelector('[bnt-submit]');
+
+        btnPesquisar.onclick = function (event) {
+            event.preventDefault();
+            const form = document.forma[0];
+            let cep = form.cep.value;
+            let url = `http://viacep.com.br/ws/${cep}/json/`;
+            ajax = new XMLHttpRequest();
+            ajax.open("GET", url, true);
+            ajax.send(null);
+
+            ajax.onreadystatechange = () => {
+                if (ajax.readyState == 4) {
+                    if (ajax.status == 200) {
+                        console.log(ajax.responseText);
+                        let resposta = JSON.parse(ajax.responseText);
+                        form.endereco.value = resposta.logradouro;
+                        form.bairro.value = resposta.bairro;
+                        form.cidade.value = resposta.localidade;
+                        form.uf.value = resposta.uf;
+                    }
+                }
+            };
+        };
+    </script>
+</body>
+
+</html>
