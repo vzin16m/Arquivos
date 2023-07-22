@@ -1,0 +1,15 @@
+ DOM ou Document Object Model, é uma maneira de transformar o javascript em um
+controlador do html, de forma que o JS tenha total "poder" sobre o codigo
+html.
+ Assim, imaginemos que você esteja vendo a tv e comece a passar um canal do
+qual você não goste, qual a maneira para interagir com a tv? Simples, com um
+controle remoto, de semelhante maneira o DOM se comporta, como o nosso
+controle remoto do html.
+ Com o DOM, podemos tornar o html mais dinamico e interativo, de maneira que
+este tranforme o site em uma arvore, onde existe um objeto principal, que tem
+objetos dentro, que por sua vez tem objetos dentro.
+ O DOM, é uma api da web, de linguagem neutra, ou seja, não importa a
+linguagem de programação escolhida.
+ Por fim, o DOM, com javascript, da a forma e ação de um site, na classica
+personificação dos elementos da web, o html seria o esqueleto e o javascript
+seria os musculos e articulações que movimentam esse esqueto.
