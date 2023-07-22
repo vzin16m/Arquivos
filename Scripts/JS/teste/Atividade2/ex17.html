@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="box">
+        <ul id="lista">
+            <li class="item">Item1</li>
+            <li class="item">Item2</li>
+            <li class="item">Item3</li>
+            <li class="item">Item4</li>
+        </ul>
+    </div>
+    <script>
+        var lista = document.querySelector("#lista");
+        var todosFilhos = lista.children;
+        var pai= lista.parentNode;
+        var primeiro = lista.firstElementChild;
+        var segundo = primeiro.nextElementSibling;
+        var ultimo = lista.lastElementChild;
+        var penultimo = ultimo.previousElementSibling;
+
+            console.log(lista)
+            console.log(todosFilhos)
+            console.log(pai)
+            console.log(primeiro)
+            console.log(segundo)
+            console.log(ultimo)
+            console.log(penultimo)   
+    </script>
+</body>
+</html>

@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Cronômetro</title>
+</head>
+<body>
+  <h1>Cronômetro</h1>
+  <p id="cronometro">00:00:00</p>
+  <button id="iniciar">Iniciar</button>
+  <button id="pausar">Pausar</button>
+  <button id="zerar">Zerar</button>
+
+  <script>
+    // Variáveis para armazenar o tempo em segundos, minutos e horas
+    let segundos = 0;
+    let minutos = 0;
+    let horas = 0;
+
+    // Variável para controlar se o cronômetro está ativo ou não
+    let cronometroAtivo = false;
+
+    // Variável para armazenar o ID do setInterval
+    let intervalId;
+
+    // Função para atualizar o cronômetro a cada segundo
+    function atualizarCronometro() {
+      segundos++;
+      if (segundos === 60) {
+        segundos = 0;
+        minutos++;
+        if (minutos === 60) {
+          minutos = 0;
+          horas++;
+        }
+      }
+
+      // Formata o tempo e atualiza o conteúdo do elemento 'cronometro'
+      const cronometroElemento = document.getElementById('cronometro');
+      cronometroElemento.textContent = formatarTempo(horas) + ':' + formatarTempo(minutos) + ':' + formatarTempo(segundos);
+    }
+
+    // Função auxiliar para formatar o tempo com dois dígitos (ex: 01, 02, ..., 09)
+    function formatarTempo(tempo) {
+      return tempo < 10 ? '0' + tempo : tempo;
+    }
+
+    // Adiciona um EventListener para o botão "Iniciar"
+    document.getElementById('iniciar').addEventListener('click', function() {
+      // Verifica se o cronômetro não está ativo para evitar múltiplas execuções
+      if (!cronometroAtivo) {
+        cronometroAtivo = true;
+        // Inicia o setInterval para chamar a função atualizarCronometro a cada segundo (1000 milissegundos)
+        intervalId = setInterval(atualizarCronometro, 1000);
+      }
+    });
+
+    // Adiciona um EventListener para o botão "Pausar"
+    document.getElementById('pausar').addEventListener('click', function() {
+      // Define o cronômetro como inativo e limpa o setInterval
+      cronometroAtivo = false;
+      clearInterval(intervalId);
+    });
+
+    // Adiciona um EventListener para o botão "Zerar"
+    document.getElementById('zerar').addEventListener('click', function() {
+      // Define o cronômetro como inativo e reseta os valores de tempo
+      cronometroAtivo = false;
+      segundos = 0;
+      minutos = 0;
+      horas = 0;
+      // Atualiza o conteúdo do elemento 'cronometro' para '00:00:00'
+      document.getElementById('cronometro').textContent = '00:00:00';
+      // Limpa o setInterval
+      clearInterval(intervalId);
+    });
+  </script>
+</body>
+</html>

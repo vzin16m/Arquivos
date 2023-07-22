@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .padrao {
+            width: 100px;
+            height: 100px;
+            margin: auto;
+            border: solid 2px black;
+        }
+        .grande {
+            width: 200px;
+            height: 200px;
+            margin: auto;
+            border: solid 2px black;
+        }
+        button {
+            margin: 5px 2px 5px 2px;
+        }
+    </style>
+</head>
+<body>
+    <button onclick="mudarCor('#ffffff')">Branco</button>
+    <button onclick="mudarCor('#000000')">Preto</button>
+    <button onclick="mudarCor('#ff0000')">Vermelho</button>
+    <button onclick="mudarCor('#00ff00')">Verde</button>
+    <button onclick="mudarCor('#0000ff')">Azul</button>
+    <button onclick="mudarTamanho('padrao')">Pequeno</button>
+    <button onclick="mudarTamanho('grande')">Grande</button>
+
+    <div id="frame" class="padrao"></div>
+    <script>
+        function mudarCor(cor){
+            document.getElementById("frame").style.backgroundColor = cor;
+        }
+        function mudarTamanho (tamanho){
+            let div = document.getElementById("frame");
+            div.classList.remove('padrao', 'grande');
+            div.classList.add(tamanho);
+        }
+    </script>
+</body>
+</html>

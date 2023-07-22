@@ -1,0 +1,17 @@
+Em JavaScript, a biblioteca BOM (Browser Object Model) se refere a uma coleção de objetos e interfaces fornecidos pelo navegador (browser) para interagir com a janela do navegador. A BOM permite que os desenvolvedores controlem e manipulem aspectos específicos da janela e do navegador, como gerenciamento de janelas, histórico de navegação, localização da página, entre outros.
+
+No entanto, é importante observar que a BOM não faz parte do padrão ECMAScript, que é a especificação oficial da linguagem JavaScript. A BOM é uma extensão específica de cada navegador, o que significa que alguns recursos e objetos podem variar de um navegador para outro. Portanto, é recomendado ter cuidado ao utilizar recursos da BOM, pois eles podem não funcionar em todos os navegadores de forma consistente.
+
+Alguns exemplos de objetos e recursos que fazem parte da biblioteca BOM são:
+
+    window: Representa a janela do navegador e é o objeto raiz da BOM. Ele contém várias propriedades e métodos que permitem interagir com a janela, como redimensioná-la, abrir ou fechar janelas pop-up, exibir alertas, etc.
+
+    navigator: Fornece informações sobre o navegador que está sendo usado para exibir a página, como o nome do navegador, a versão e o sistema operacional.
+
+    history: Permite controlar o histórico de navegação do usuário, possibilitando navegar para trás ou para frente nas páginas visitadas.
+
+    location: Oferece informações sobre a URL da página atual e também permite redirecionar o usuário para outra página.
+
+    screen: Fornece informações sobre a tela do usuário, como a largura e altura da tela, a resolução, etc.
+
+Vale lembrar que, embora a BOM seja amplamente usada para interações com o navegador, é sempre recomendado verificar a compatibilidade dos recursos específicos com os navegadores em que seu código será executado, especialmente se você precisar dar suporte a versões mais antigas de navegadores. Em alguns casos, pode ser necessário recorrer a bibliotecas externas ou recursos polifilizados para garantir que seu código funcione de maneira consistente em diferentes ambientes.
