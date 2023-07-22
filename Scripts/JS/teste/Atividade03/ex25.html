@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Redirecionamento e Atualização</title>
+</head>
+
+<body>
+    <h1>Redirecionamento e Atualização</h1>
+    <p>Clique no botão abaixo para ser redirecionado para o site do Senac Catanduva:</p>
+    <button onclick="redirecionarParaSenacCatanduva()">Ir para o Senac Catanduva</button>
+
+    <p>Clique no botão abaixo para atualizar a página:</p>
+    <button onclick="atualizarPagina()">Atualizar Página</button>
+
+    <script>
+        function redirecionarParaSenacCatanduva() {
+            window.location.href = "http://sp.senac.br/catanduva";
+        }
+
+        function atualizarPagina() {
+            window.location.reload();
+        }
+    </script>
+</body>
+
+</html>
