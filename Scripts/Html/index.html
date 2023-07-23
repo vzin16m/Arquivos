@@ -10,47 +10,129 @@
     <div id = 'tudo'>
 
     <header class="cabeca">
+	<h1 class='titulo'> Imoveis Para Você </h1>
+	<img src='./imagens/banner1.webp'>
         <nav>
-            <a href=".imoveis">Imoveis a Venda</a>
-            <a href=".aluguel">Aluguel</a>
-            <a href=".sobre">Sobre Nós</a>
-            <a href=".contato">Contato</a>
+	    <a href="#tudo">Inicio</a>
+            <a href="#imoveis">Imoveis a Venda</a>
+            <a href='#aluguel'>Aluguel</a>
+            <a href="#sobre">Sobre Nós</a>
+            <a href="#contato">Contato</a>
         </nav>
     </header>
 
-    <main class='imoveis'>
+
+    <main id='imoveis'>
         <hgroup>
             <h1>Imoveis a Venda</h1>
         </hgroup>
-	<a href="./imoveis.html">
-		<img src="./imagens/casaazul.png" alt="imagem de uma casa">
-		<img src="./imagens/casacampo.jpg" alt="imagem de uma casa">
-		<img src="./imagens/casacidade.jpg" alt="imagem de uma casa">
-	</a>
+
+	<div class='galeria'>
+	  <a href="./imoveis.html">
+		<img src="./imagens/casaazul.png" alt="imagem de uma casa"
+			 width=600px height=400px>		  
+	  </a>
+	  <div class='desc'><ul>
+			  	<li>Cidade: Catanduva</li>
+			  	<li>Bairro: Suburbio</li>
+			  	<li>Preço:R$100.000,00</li>
+		  	    </ul>
+	  </div>
+	</div>
+
+	<div class='galeria'>
+	  <a href="./imoveis.html">
+		<img src="./imagens/casacampo.jpg" alt="imagem de uma casa"/
+			width=600px height=400px>
+	  </a>
+	  <div class='desc'><ul>
+			  	<li>Cidade: Catanduva</li>
+			  	<li>Bairro: Area Rural</li>
+			  	<li>Preço:R$200.000,00</li>
+		  	    </ul>
+	  </div>
+	</div>
+
+	<div class='galeria'>
+	  <a href="./imoveis.html">
+		<img src="./imagens/casacidade.jpg" alt="imagem de uma casa"/
+			width=600px height=400px>
+	  </a>
+	  <div class='desc'><ul>
+			  	<li>Cidade: Catanduva</li>
+			  	<li>Bairro: Centro</li>
+			  	<li>Preço:R$200.000,00</li>
+		  	    </ul>
+	  </div>
+	</div>
     </main>
 
-    <div class="aluguel">
+
+    <div id="aluguel">
         <h1> Aluguel</h1>
+
+	<div class='galeriaalug'>
+	  <a href="./imoveis.html">
+		<img src="./imagens/aluguel1.png" alt="imagem de uma casa"
+			 width=600px height=400px>		  
+	  </a>
+	  <div class='descal'><ul>
+			  	<li>Cidade: Catanduva</li>
+			  	<li>Bairro: Centro</li>
+			  	<li>Aluguel: R$800,00</li>
+		  	    </ul>
+	  </div>
+	</div>
+
+	<div class='galeriaalug'>
+	  <a href="./imoveis.html">
+		<img src="./imagens/aluguel2.jpg" alt="imagem de uma casa"/
+			width=600px height=400px>
+	  </a>
+	  <div class='descal'><ul>
+			  	<li>Cidade: Catanduva</li>
+			  	<li>Bairro: Centro</li>
+			  	<li>Aluguel: R$950,00</li>
+		  	    </ul>
+	  </div>
+	</div>
+
+	<div class='galeriaalug'>
+	  <a href="./imoveis.html">
+		<img src="./imagens/aluguel3.jpg" alt="imagem de uma casa"/
+			width=600px height=400px>
+	  </a>
+	  <div class='descal'><ul>
+			  	<li>Cidade: Catanduva</li>
+			  	<li>Bairro: Suburbio</li>
+			  	<li>Aluguel: R$650,00</li>
+		  	    </ul>
+	  </div>
+	</div>
     </div>
 
-    <div class="sobre">
+    <div id="sobre">
         <h1> Sobre Nós </h1>
         <p> Somos uma imobiliaria que tem como objetivo lhe auxiliar na melhor /
             escolha para sua casa
         </p>
     </div>
 
-    <footer class="contato">
+    <footer id="contato">
         <hgroup>
             <h1> Contatos</h1>
             <div class="subcontato">
-                <h2> email</h2>
-                <a href="mailto:emaildecontato@email.com">Nosso Email</a>
-                <h2> telefone</h2>
-                <h3> whatsapp</h3>
-                <p> 17999999999</p>
-                <h3> fixo</h3>
-                <p> 35707070</p>
+		<div class:'email'>
+                    <h2> email</h2>
+                    <a href="mailto:emaildecontato@email.com">Nosso Email</a>
+		</div>
+		<div class='tel'>
+                    <h2> telefone</h2>
+                    <h3> whatsapp</h3>
+                    <p> 17999999999</p>
+                    <h3> fixo</h3>
+                    <p> 35707070</p>
+		</div>
             </div>
         </hgroup>
     </footer>
