@@ -6,9 +6,26 @@
 }
 .imoveis{
     color: white;
+    padding: 70px;
+    //afloata:a aright;
+    width: 500px;
+    height: 400px;
+    text-align: left;
+    margin-top:80px;
+    }
+.imoveis img{
+    width: 500px;
+    height: 400px;
+    margin: 5px;
+    border: 1px solid black;
+    float: left;
+}
+.imoveis:hover img{
+    border:1px solid #777;
 }
 .aluguel{
     color:white;
+    padding: 70px;
 }
 .sobre{
     color:white
